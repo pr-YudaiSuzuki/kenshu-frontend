@@ -1,0 +1,10 @@
+.action {
+  display: flex;
+  align-items: center;
+  
+  &__menu {
+    background: #345584;
+    border-radius: 4px;
+    margin-right: 11px;
+  }
+}
