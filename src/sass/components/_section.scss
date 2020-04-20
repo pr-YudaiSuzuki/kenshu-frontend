@@ -1,0 +1,19 @@
+.section {
+  &--nav {
+    background: $bg-white;
+    border-bottom: 1px solid $border-light;
+  }
+  &--ranking {
+    padding: 22px 0;
+  }
+  &--layout {
+    padding: 40px 0 103px;
+    background: $bg-white;
+  }
+}
+
+
+.articles__more {
+  margin-top: 30px;
+  text-align: center;
+}
