@@ -2,20 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 100%;
-
   &__item {
-    width: calc(16.6666% - 3.3333px);
+    flex: 1;
     background: $bg-white;
     position: relative;
     transition: .2s ease-out;
+    + .tile__item {
+      margin-left: 8px;
+    }
     &:hover {
       box-shadow: 0 1px 12px 1px rgba(0, 0, 0, 0.18);
       transform: translateY(-1px);
     }
   }
-  
-
   &__label {
     position: absolute;
     left: 0;
@@ -33,7 +32,6 @@
     text-indent: -3px;
     z-index: 1;
   }
-
   &__wrapper {
     display: flex;
     height: 100%;
@@ -41,7 +39,6 @@
     text-decoration: none;
     color: inherit;
   }
-
   &__img {
     width: 100%;
     height: 100px;
@@ -55,8 +52,6 @@
       transition: .2s ease-out;
     }
   }
-
-
   &__content {
     flex: 1;
     padding: 10px;
@@ -65,32 +60,29 @@
     justify-content: space-between;
     line-height: 1.4;
   }
-
   &__title {
     font-weight: normal;
     font-size: 13px;
   }
-
   &__meta {
     color: $color-muted;
   }
-
   &__desc {
     font-size: 12px;
   }
-
   &__subtitle {
     font-size: 13px;
-    &--link {
-      color: $color-muted;
-      text-decoration: none;
-      transition: .2s ease-out;
-      &:hover {
-        color: $color-main;
-      }
+    color: $color-muted;
+  }
+  &__inner-link {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: .2s ease-out;
+    &:hover {
+      color: $color-main;
     }
   }
-
   &__icon {
     width: 15px;
     height: 15px;

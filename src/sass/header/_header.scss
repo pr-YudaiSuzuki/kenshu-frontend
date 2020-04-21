@@ -1,0 +1,9 @@
+.header {
+  background: $bg-main;
+  height: 75px;
+  padding: 13px 0 8px;
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+}

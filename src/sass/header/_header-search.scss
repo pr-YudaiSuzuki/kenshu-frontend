@@ -1,14 +1,13 @@
-.search-bar {
+.header-search {
   display: flex;
-
   &__input{
     height: 30px;
     border-radius: 4px 0 0 4px;
     border: none;
     width: 258px;
-    padding: 2px 15px;
-    line-height: 30px;
+    padding: 9px 15px 8px;
     font-size: 13px;
+    background: $bg-white;
     &:focus {
       outline-color: #449ae0;
     }

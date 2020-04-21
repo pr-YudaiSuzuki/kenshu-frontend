@@ -1,19 +1,39 @@
-@import "utils/_reset.scss";
-@import "_variables.scss";
-@import "_common.scss";
+/* ====== base ====== */
+@import "_var.scss";
+@import "_base.scss";
 
+/* ====== layout ====== */
 @import "components/_container.scss";
 @import "components/_section.scss";
-@import "components/_header.scss";
-@import "components/_action.scss";
-@import "components/_logo.scss";
-@import "components/_search-bar.scss";
-@import "components/_menu.scss";
 @import "components/_layout.scss";
-@import "components/_section.scss";
+
+/* ====== header ====== */
+@import "header/_header-logo.scss";
+@import "header/_header-desc.scss";
+@import "header/_header-action-nav.scss";
+@import "header/_header-action-list.scss";
+@import "header/_header-search.scss";
+@import "header/_header-service-nav.scss";
+@import "header/_header-service-list.scss";
+@import "header/_header.scss";
+
+/* ====== global-nav ====== */
+@import "nav/_global-nav.scss";
+@import "nav/_global-nav-list.scss";
+
+/* ====== sidebar ====== */
+@import "components/_sidebar.scss";
+
+/* ====== footer ====== */
+@import "footer/_footer-menu.scss";
+@import "footer/_footer-list.scss";
+@import "footer/_footer-nav.scss";
+@import "footer/_footer-nav-list.scss";
+@import "footer/_footer-copy.scss";
+@import "footer/_footer.scss";
+
+/* ====== comopnents ====== */
 @import "components/_tile.scss";
+@import "components/_tag.scss";
 @import "components/_btn.scss";
 @import "components/_card.scss";
-@import "components/_sidebar.scss";
-@import "components/_footer.scss";
-@import "components/_footer-menu.scss";

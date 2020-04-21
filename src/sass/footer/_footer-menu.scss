@@ -1,0 +1,16 @@
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  &__content {
+    width: 25%;
+  }
+  &__content--double {
+    width: 50%;
+  }
+  &__title {
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 9px;
+  }
+}

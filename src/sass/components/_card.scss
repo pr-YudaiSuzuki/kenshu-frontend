@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  
   &__item {
     width: calc(50% - 9px);
     transition: .2s ease-in;
@@ -17,7 +16,6 @@
       }
     }
   }
-  
   &__wrapper {
     display: flex;
     height: 100%;
@@ -27,18 +25,15 @@
     color: $color-black;
     text-decoration: none;
   }
-  
   &__content {
     display: flex;
   }
-  
   &__title {
     flex: 1;
     margin-right: 15px;
     font-size: 14px;
     line-height: 1.6;
   }
-  
   &__img {
     width: 100px;
     height: 66px;
@@ -53,23 +48,19 @@
       transition: inherit;
     }
   }
-    
   &__meta {
     display: flex;
     align-items: center;
     margin-top: 6px;
     color: $color-muted;
   }
-  
   &__desc {
     font-size: 12px;
     margin-right: 12px;
   }
-  
   &__icon {
     vertical-align: -2px;
   }
-  
   &__subtitle {
     font-size: 13px;
     &--link {
@@ -80,5 +71,10 @@
         color: $color-main;
       }
     }
+  }
+  &__more {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
   }
 }

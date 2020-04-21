@@ -1,0 +1,9 @@
+.header-action-nav {
+  display: flex;
+  margin-left: auto;
+  &__item {
+    + .header-action-nav__item {
+      margin-left: 11px;
+    }
+  }
+}
