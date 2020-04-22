@@ -1,0 +1,8 @@
+/* ====== サイドバー全体のスタイル ====== */
+
+.sidebar {
+  &__content {
+    padding: 15px 0 15px;
+    border-bottom: 1px solid $border-light;
+  }
+}

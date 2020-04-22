@@ -1,6 +1,14 @@
+/* ====== 基本スタイル ====== */
+
 body {
   font-size: 14px;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   color: $color-black;
   background: $bg-body;
+  line-height: 1;
+}
+
+.container {
+  width: 1126px;
+  margin: 0 auto;
 }

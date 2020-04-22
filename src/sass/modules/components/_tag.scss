@@ -1,0 +1,30 @@
+/* ====== タグ ====== */
+
+%tag {
+  display: inline-block;
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 11px;
+  font-size: 12px;
+  transition: .2s;
+}
+.tag {
+  $bg: #f1f1f1;
+  
+  background: $bg;
+  color: $color-black;
+  @extend %tag;
+  &:hover {
+    background: #e1e1e1;
+  }
+  &--more {
+    @extend %tag;
+    background: transparent;
+    border: 1px solid $bg;
+    &:hover {
+      transform: translateX(8px);
+      background: inherit;
+      box-shadow: -8px 0 0 $bg;
+    }
+  }
+}

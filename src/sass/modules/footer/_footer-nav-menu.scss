@@ -1,0 +1,21 @@
+/* ====== メニュー ====== */
+
+.footer-nav-menu {
+  $this: & !global;
+  display: flex;
+  margin-left: -10px;
+  &__item {
+    margin: 0 10px;
+  }
+  &__link {
+    margin: -8px;
+    padding: 8px;
+    display: inline-block;
+    color: $color-dark;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+      color: #202020;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+/* ====== メイン領域のレイアウト ====== */
+
+.l-main {
+  /*
+    Gridの状況を見てこちらに変更
+    
+    display: grid;
+    grid-template-columns: 779px 308px;
+    justify-content: space-between;
+  */
+
+  /* ↓ Grid適用時に削除可能なスタイル */
+  display: flex;
+  justify-content: space-between;
+  &__main {
+    width: 779px;
+  }
+  &__sub {
+    width: 308px;
+  }
+  /* 削除可能スタイルここまで */
+  &__header {
+    height: 43px;
+  }
+  %l-main__title {
+    font-weight: bold;
+  }
+  &__title {
+    @extend %l-main__title;
+    font-size: 24px;
+    &--2 {
+      @extend %l-main__title;
+      font-size: 18px;
+    }
+  }
+  &__more {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
