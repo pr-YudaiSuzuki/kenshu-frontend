@@ -1,0 +1,10 @@
+/* ====== ヘッダー全体のスタイル ====== */
+
+.header {
+  background: $bg-main;
+  padding: 13px 0 10px;
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+}
