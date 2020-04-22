@@ -1,0 +1,33 @@
+/* ====== サーチバー ====== */
+
+.search-bar {
+  $height: 30px;
+  $width: 258px;
+  $font-size: 13px;
+  
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  &__input{
+    border: none;
+    height: $height;
+    width: $width;
+    padding: .3em 1em .2em;
+    font-size: $font-size;
+    background: $bg-white;
+  }
+
+  &__btn {
+    border: none;
+    width: $height;
+    height: $height;
+    padding: 7px;
+    background: $btn-main;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+    &:hover {
+      background: #449ae0;
+    }
+  }
+}

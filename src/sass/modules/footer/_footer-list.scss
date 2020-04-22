@@ -1,0 +1,31 @@
+/* ====== フッターの各リストのスタイル ====== */
+
+.footer-list {
+  /*
+    Gridの対応状況を見て下記に変更
+
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+  */
+  
+  /* ↓ Grid適用時に削除可能なスタイル */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 180px;
+  /* 削除可能スタイルここまで */
+  
+  &__link {
+    font-size: 12px;
+    padding: 9px 0;
+    color: $color-dark;
+    display: inline-block;
+    text-decoration: none;
+    &:hover {
+      color: #202020;
+      text-decoration: underline;
+    }
+}
+}
