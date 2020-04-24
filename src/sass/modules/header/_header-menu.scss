@@ -1,0 +1,26 @@
+/* ====== 背景色付きメニュー ====== */
+
+.header-menu {
+  display: flex;
+  padding: 0 8px;
+
+  &__item {
+    color: $color-white;
+    padding: 0 8px;
+    font-size: 13px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    & + & {
+      border-left: 1px solid $color-light;
+    }
+    
+    & .header-menu__item-link {
+      margin: -8px;
+      padding: 8px;
+    }
+  }
+  
+}

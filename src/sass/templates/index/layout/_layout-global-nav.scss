@@ -1,0 +1,9 @@
+/* ====== グローバルナビ領域のレイアウト ====== */
+
+.layout-global-nav {
+  background: $bg-white;
+  border-bottom: 1px solid $border-light;
+  &__content {
+    @extend %container;
+  }
+}

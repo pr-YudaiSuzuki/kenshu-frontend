@@ -1,0 +1,17 @@
+/* ====== ページ全体のレイアウト ====== */
+
+.layout {
+  &__header {
+    padding: 13px 0 10px;
+    background: $bg-main;
+  }
+
+  &__content {
+    padding: 40px 0 103px;
+    background: $bg-white;
+  }
+  
+  &__footer {
+    padding: 60px 0 9px;
+  }
+}

@@ -1,5 +1,5 @@
 'use strict';
 
 {
-  console.log('https://prtimes.jp');
+  console.log('Copyright © PR TIMES Inc. All Rights Reserved.');
 }

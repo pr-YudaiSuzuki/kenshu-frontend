@@ -1,45 +1,39 @@
 /* ====== Flexboxを使用したGridスタイル ====== */
-/*
- Gridの対応状況を見て下記スタイルに変更
- .grid__item要素が必要なくなる
 
-%grid {
-  display: grid;
-}
 .grid {
-  @extend %grid;
-  &--tile {
-    @extend %grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 8px;
-  }
-  &--card {
-    @extend %grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0 18px;
-  }
-}
-*/
-
-
-%grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.grid {
-  $this: & !global;
-  @extend %grid;
-  @mixin grid($modifier, $col-num, $gap-x, $gap-y) {
-    &--#{$modifier} {
-      @extend %grid;
-      & #{$this}__item {
-        $sum-gap: $gap-x * ($col-num - 1);
-        width: calc((100% - #{$sum-gap}) / #{$col-num});
+  align-items: stretch;
+
+  &__cell {
+    /* space-betweenを指定しているため3カラム以上にする際には余った要素の余白に注意 */
+    @mixin cellSize($cols, $gap) {
+      @if $gap == 0 {
+        width: #{(100 / $cols)+'%'};
+      } @else {
+        width: calc(#{(100 / $cols)+'%'} - #{($gap * ($cols - 1) / $cols)});
       }
     }
+    width: 100%;
+    &--tile {
+      @include cellSize(6, 8px);
+    }
+    &--card {
+      @include cellSize(2, 18px);
+    }
+    &--list {
+      @include cellSize(4, 0);
+    }
+    &--list-double {
+      @include cellSize(2, 0);
+    }
+    &--main {
+      width: 779px;
+    }
+    &--sub {
+      width: 308px;
+    }
   }
-  @include grid('tile', 6, 8px, 0);
-  @include grid('card', 2, 18px, 0);
 }
 
