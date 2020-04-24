@@ -1,22 +1,27 @@
 /* ====== 要素間ボーダー付きメニュー ====== */
 
-.bordered-menu {
+.header-nav {
   display: flex;
   margin-left: -8px;
+  
   &__item {
+    padding: 0 8px;
+    font-size: 13px;
+    color: $color-light;
+
     & + & {
       border-left: 1px solid $color-light;
     }
-  }
-  &__link {
-    margin: -8px 0;
-    padding: 8px 8px;
-    font-size: 13px;
-    color: $color-light;
-    text-decoration: none;
+
     &:hover {
       color: $color-white;
     }
+
+    & .header-nav__item-link {
+      padding: 8px;
+      margin: -8px;
+    }
+    
     &.is-active {
       font-weight: bold;
       color: $color-white;

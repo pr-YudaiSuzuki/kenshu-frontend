@@ -1,0 +1,17 @@
+/* ====== コンテンツ領域のヘッダー ====== */
+
+.content-header {
+  height: 43px;
+
+  %content-header__title {
+    font-weight: bold;
+  }
+  &__title {
+    @extend %content-header__title;
+    font-size: 24px;
+    &--secondary {
+      @extend %content-header__title;
+      font-size: 18px;
+    }
+  }
+}
