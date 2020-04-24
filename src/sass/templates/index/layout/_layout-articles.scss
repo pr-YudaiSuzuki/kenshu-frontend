@@ -1,0 +1,9 @@
+/* ====== トップページ特有のレイアウト ======*/
+
+.layout-articles {
+  &__more {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

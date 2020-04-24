@@ -1,0 +1,14 @@
+/* ====== フッター領域のレイアウト ====== */
+
+.layout-footer {
+  @extend %container;
+  &__list {
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__nav {
+    margin-left: -10px;
+    margin-bottom: 18px;
+  }
+}

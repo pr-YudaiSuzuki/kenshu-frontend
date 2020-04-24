@@ -1,6 +1,21 @@
-/* ====== グローバルナビ全体のスタイル ====== */
+/* ====== グローバルナビ ====== */
 
 .global-nav {
-  background: $bg-white;
-  border-bottom: 1px solid $border-light;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    font-size: 13px;
+    color: #294c7a;
+    &:hover {
+      font-weight: bold;
+    }
+    &.is-active {
+      font-weight: bold;
+    }
+  }
+  &__btn {
+    display: block;
+    padding: 12px 10px 10px;
+  }
 }
